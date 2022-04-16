@@ -1,5 +1,5 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || require('fs').readFileSync(`${__dirname}/../neardev/dev-account`).toString()
-
+const CONTRACT_NAME = process.env.CONTRACT_NAME || "near-protocol-challenge-with-rust"
+console.log(CONTRACT_NAME)
 function getConfig(env) {
   switch (env) {
 

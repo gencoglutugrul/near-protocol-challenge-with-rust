@@ -1,0 +1,1 @@
+near call $CONTRACT_NAME init "{\"owner_id\": \"$CONTRACT_OWNER\"}" --account-id $CONTRACT_OWNER
