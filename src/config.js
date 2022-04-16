@@ -1,4 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME ||'first-smart-contract-with-rust2'
+const CONTRACT_NAME = process.env.CONTRACT_NAME || require('fs').readFileSync(`${__dirname}/../neardev/dev-account`).toString()
 
 function getConfig(env) {
   switch (env) {
