@@ -3,7 +3,7 @@ import 'regenerator-runtime/runtime'
 import { getTxState, initContract, login, logout, nearToYocto } from './utils'
 
 import getConfig from './config'
-const { networkId } = getConfig(process.env.NODE_ENV || 'development')
+const { networkId } = getConfig('testnet')
 
 const submitButton = document.querySelector('form button')
 const tipAmount = document.querySelector("#tip_amount")
