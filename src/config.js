@@ -1,5 +1,5 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || "near-protocol-challenge-with-rust"
-console.log(CONTRACT_NAME)
+const CONTRACT_NAME = "hello.randomua.testnet"
+
 function getConfig(env) {
   switch (env) {
 

@@ -51,11 +51,19 @@
           >
             My name is Tuğrul and you?
           </label>
-          <div style="display: flex;">
+          <div style="display: flex; margin-bottom: 15px;">
             <input type="text" style="flex: 1" autocomplete="off" id="name" />
           </div>
 
-         
+          <label for="tip">
+            <input type="checkbox" name="tip" id="tip" />
+            Buy me a coffee?</label>
+
+          <div style="margin-top:15px">
+            <label for="tip_amount">Amount of $NEAR</label>
+            <input type="number" name="tip_amount" id="tip_amount" placeholder="5" style="width: 80px;" disabled>
+          </div>
+
             <div style="margin-top: 15px;">
               <button disabled style="border-radius: 0 5px 5px 0;">Send</button>
             </div>
@@ -76,7 +84,7 @@
 
   <aside data-behavior="notification" style="display: none">
     <a target="_blank" href="https://explorer.testnet.near.org/accounts/"></a>
-    called method: 'get_greeting' in contract:
+    called method: '<span id="method_name"></span>' in contract:
     <a target="_blank" href="https://explorer.testnet.near.org/accounts/"></a>
     <footer>
       <div>✔ Succeeded</div>
